@@ -87,13 +87,9 @@ npm run build
 
 ## 📸 Screenshots
 
-- Hero Section
   <img src="./screenshots/hero.png" width="600" />
-- Product Section
   <img src="./screenshots/products.png" width="600" />
-- Reviews
   <img src="./screenshots/footer.png" width="600" />
-- Mobile View
   <img src="./screenshots/mobile.png" width="600" />
 
 > Tip: Add screenshots inside a `/screenshots` folder and link them here.
