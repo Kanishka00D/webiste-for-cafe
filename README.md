@@ -92,18 +92,6 @@ npm run build
   <img src="./screenshots/footer.png" width="600" />
   <img src="./screenshots/mobile.png" width="600" />
 
-> Tip: Add screenshots inside a `/screenshots` folder and link them here.
-
----
-
-## 🌟 Future Improvements
-
-- Add backend ordering system
-- Add database for real product data
-- Online payment integration
-- Admin dashboard
-- Customer login system
-
 ---
 
 ## 🧑‍💻 Author
