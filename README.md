@@ -61,8 +61,8 @@ src/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Kanishka00D/webiste-for-cafe
+cd webiste-for-cafe
 ```
 
 ### 2️⃣ Install dependencies
@@ -80,7 +80,7 @@ npm run dev
 ### 4️⃣ Build for production
 
 ```bash
-npm run build
+npm run deploy
 ```
 
 ---
@@ -97,7 +97,7 @@ npm run build
 ## 🧑‍💻 Author
 
 **Kanishka Dahampath**
-Front-end Developer | Designer
+Full Stack Developer | Designer
 
 If you like this project, don't forget to ⭐ the repository!
 
