@@ -4,21 +4,37 @@ import Person1 from '../assets/Reviews/3.png';
 import Person2 from '../assets/Reviews/4.png';
 import Person3 from '../assets/Reviews/5.png';
 import Person4 from '../assets/Reviews/6.png';
+import { motion } from 'framer-motion';
 
 const Reviews = () => {
   return (
-    <div className='flex flex-col items-center mt-16 px-4'>
+    <motion.div
+      className='flex flex-col items-center mt-16 px-4'
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
       <div className='max-w-6xl w-full'>
-        {/* Header */}
         <hr className='border-t border-gray-300 my-8' />
 
-        <div className='text-center mb-10'>
+        <motion.div
+          className='text-center mb-10'
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <p className='text-gray-500'>Reviews</p>
           <h2 className='font-semibold text-3xl'>What our customers say</h2>
-        </div>
-
-        {/* Reviews Grid */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10'>
+        </motion.div>
+        <motion.div
+          className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10'
+          initial='hidden'
+          whileInView='show'
+          transition={{ staggerChildren: 0.2 }}
+          viewport={{ once: true }}
+        >
           <ReviewCard
             personImage={Person1}
             name='Chris Bryan'
@@ -39,9 +55,9 @@ const Reviews = () => {
             name='Alan Mayer'
             review='Visited with friends and we all loved it. Delicious drinks, generous portions, and a warm atmosphere. One of the best cafes around.'
           />
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

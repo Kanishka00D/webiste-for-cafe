@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 
 const Contact = () => {
   return (
-    <div className='flex justify-center mt-10'>
+    <div className='flex justify-center mt-10' id='contact'>
       <footer className='max-w-6xl w-full bg-amber-900 text-white px-10 py-10 rounded-lg'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
           <div>
@@ -19,11 +19,18 @@ const Contact = () => {
             </p>
 
             <p className='text-sm mt-4 opacity-80'>
-              kanishkacafe@gmail.com <br />
-              Phone: +94 78 125 4874
+              <a
+                href='mailto:kanishkacafe@gmail.com'
+                className='hover:text-amber-200'
+              >
+                kanishkacafe@gmail.com
+              </a>
+              <br />
+              <a href='tel:+94781254874' className='hover:text-amber-200'>
+                Phone: +94 78 125 4874
+              </a>
             </p>
           </div>
-
           <div>
             <h3 className='font-semibold text-lg'>Quick Links</h3>
             <nav className='flex flex-col mt-4 text-sm gap-2'>
@@ -44,17 +51,21 @@ const Contact = () => {
               </a>
             </nav>
           </div>
-
           <div>
             <h3 className='font-semibold text-lg'>Resources</h3>
             <div className='text-sm mt-4 flex flex-col gap-2'>
-              <a className='hover:text-amber-200'>Support</a>
-              <a className='hover:text-amber-200'>Privacy Policy</a>
-              <a className='hover:text-amber-200'>Terms & Conditions</a>
+              <a href='#' className='hover:text-amber-200'>
+                Support
+              </a>
+              <a href='#' className='hover:text-amber-200'>
+                Privacy Policy
+              </a>
+              <a href='#' className='hover:text-amber-200'>
+                Terms & Conditions
+              </a>
             </div>
           </div>
         </div>
-
         <div className='mt-10 border-t border-white/20 pt-5 text-sm text-center opacity-70'>
           © {new Date().getFullYear()} Kanishka’s Cafe — All Rights Reserved.
         </div>
